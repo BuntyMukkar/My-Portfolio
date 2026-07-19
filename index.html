@@ -45,13 +45,20 @@
 		<p>About Me web page and Calculator in Python</p>
 	</section>
 
-	<section>
+	<section id="contact">
 		<h2>Contact</h2>
-		<p>Email: buntysmoga@gmail.com</p>
-		<p>
-			<a href="https://github.com">GitHub</a>
-			<a href="https://linkedin.com/">Linkein</a>
-		</p>
+		<form action="https://formspree.io/f/xeeygwqv" method="post">
+			<label for="name">Name</label>
+			<input type="text" name="name" id="name" required>
+
+			<label for="email">Email</label>
+			<input type="email" name="email" id="email" required>
+
+			<label for="message">Message</label>
+			<textarea name="message" id="message" required></textarea>
+
+			<button type="submit">Send</button>
+		</form>
 	</section>
 
 	<footer>
