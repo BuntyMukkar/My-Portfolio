@@ -42,6 +42,25 @@ footer p {
 	margin: 0;
 }
 
+#skillsGrid {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 15px;
+	margin-top: 20px;
+}
+
+.skill-card {
+	background-color: white;
+	border: 1px solid #ccc;
+	border-radius: 8px;
+	padding: 20px;
+	text-align: center;
+	font-weight: bold;
+	color: #2c5f8a;
+}
+
+
+
 #contact form {
 	display: flex;
 	flex-direction: column;
@@ -70,3 +89,18 @@ footer p {
 	background-color: #1e4666;
 }
 
+@media (max-width: 600px) {
+	#skillsGrid {
+		grid-template-columns: 1fr;
+	}
+
+	header {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	nav a {
+		margin: 5px;
+	}
+
+}
